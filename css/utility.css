@@ -1,0 +1,97 @@
+/* ================= DEBUG ================= */
+
+.border{
+    border: 2px solid red;
+}
+
+/* ================= FLEX UTILITIES ================= */
+
+.flex{
+    display: flex;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+/* ================= SPACING ================= */
+
+.m-1{
+    margin: 5px;
+}
+
+.m-2{
+    margin: 10px;
+}
+
+.p-1{
+    padding: 10px;
+}
+
+.p-2{
+    padding: 20px;
+}
+
+/* ================= BACKGROUND UTILITIES ================= */
+
+/* Removed forced text color */
+.bg-black{
+    background-color: #000;
+}
+
+.bg-grey{
+    background-color: #121212;
+}
+
+/* ================= RADIUS ================= */
+
+.rounded{
+    border-radius: 8px;
+}
+
+.rounded-lg{
+    border-radius: 12px;
+}
+
+/* ================= FILTER ================= */
+
+.invert{
+    filter: invert(1);
+}
+
+/* ================= SCROLLBAR (SPOTIFY STYLE) ================= */
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #2a2a2a;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #3a3a3a;
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+/* Firefox */
+*{
+    scrollbar-width: thin;
+    scrollbar-color: #2a2a2a transparent;
+}

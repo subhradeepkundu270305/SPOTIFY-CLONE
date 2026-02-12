@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================= SIDEBAR ================= -->
+    <div class="left">
+
+        <div class="close">
+            <img width="28" class="invert" src="img/close.svg" alt="">
+        </div>
+
+        <!-- Home Section -->
+        <div class="home">
+            <div class="logo">
+                <img class="invert" src="img/logo.svg" alt="">
+            </div>
+
+            <ul>
+                <li>
+                    <img class="invert" src="img/home.svg" alt="">
+                    Home
+                </li>
+                <li>
+                    <img class="invert" src="img/search.svg" alt="">
+                    Search
+                </li>
+            </ul>
+        </div>
+
+        <!-- Library Section -->
+        <div class="library">
+
+            <div class="heading">
+                <img class="invert" src="img/playlist.svg" alt="">
+                <h2>Your Library</h2>
+            </div>
+
+            <div class="songList">
+                <ul></ul>
+            </div>
+
+            <div class="footer">
+                <a href="#">Legal</a>
+                <a href="#">Privacy</a>
+                <a href="#">Cookies</a>
+                <a href="#">Accessibility</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ================= RIGHT SECTION ================= -->
+    <div class="right">
+
+        <!-- Header -->
+        <div class="header">
+
+            <div class="nav">
+                <div class="hamburgerContainer">
+                    <img width="32" class="invert hamburger" src="img/hamburger.svg" alt="">
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button class="signupbtn">Sign up</button>
+                <button class="loginbtn">Log in</button>
+            </div>
+
+        </div>
+
+        <!-- Playlist Section -->
+        <div class="spotifyPlaylists">
+
+            <h1>Spotify Playlists</h1>
+
+            <div class="cardContainer"></div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<!-- ================= BOTTOM PLAYER ================= -->
+
+<div class="playbar">
+
+    <!-- LEFT -->
+    <div class="player-left">
+        <img class="player-cover" src="img/music.svg" alt="">
+        <div class="player-info">
+            <div class="songinfo"></div>
+            <div class="artistname">Unknown Artist</div>
+        </div>
+    </div>
+
+    <!-- CENTER -->
+    <div class="player-center">
+
+        <div class="songbuttons">
+            <img id="previous" src="img/prevsong.svg" width="28" alt="">
+            <img id="play" src="img/play.svg" width="36" alt="">
+            <img id="next" src="img/nextsong.svg" width="28" alt="">
+        </div>
+
+        <div class="progress-area">
+            <span class="songtime">00:00</span>
+
+            <div class="seekbar">
+                <div class="circle"></div>
+            </div>
+
+            <span class="totaltime">00:00</span>
+        </div>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="player-right">
+        <div class="volume">
+            <img src="img/volume.svg" width="22" alt="">
+            <div class="range">
+                <input type="range" min="0" max="100" value="50">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
